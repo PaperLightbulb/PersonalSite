@@ -42,7 +42,7 @@ onMounted(() => {
 <template>
   <div class="verti">
     <h3>Showcase</h3>
-    <h1>Arbor Garnett</h1>
+    <h1>Tim Garnett</h1>
     <div class="horiz">
       <button class="lnk" @click="send_home()"><h2>Home</h2></button>
       <button class="lnk" @click="send_this_site()" ><h2>This Site</h2></button>
@@ -52,7 +52,7 @@ onMounted(() => {
     <br>
     <div ref="home">
       <h2>Home</h2>
-      <p>Hello, I'm Arbor.<br><br>
+      <p>Hello, I'm Tim.<br><br>
         
       I'm excited about<br>
       - Cloud computing<br>
