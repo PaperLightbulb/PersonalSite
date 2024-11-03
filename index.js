@@ -1,9 +1,12 @@
 const express = require('express')
+const fs = require("fs")
 const app = express()
 const port = 3000
 
+const html = fs.readFileSync('./index.html').toString()
+
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send(html)
 })
 
 app.listen(port, () => {
