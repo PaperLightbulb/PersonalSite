@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: row;
   align-items: start;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .verti {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 5%;
+  padding: 40px;
 }
 
 .lnk {
@@ -25,6 +27,9 @@
 .lnk > *:hover {
   text-decoration: none;
 }
+h2 {
+  white-space: nowrap;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-block-end: 0;
@@ -32,15 +37,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 60px;
 }
 
 :root {
-  --bg: rgb(57, 65, 132);
-  --fg: rgb(185, 215, 214);
+  --bg: rgb(53, 60, 126);
+  --fg: rgb(215, 233, 232);
   color: var(--fg);
   background-color: var(--bg);
   font-family: "Roboto";
+  font-weight: 600;
 }
 
 @font-face {
