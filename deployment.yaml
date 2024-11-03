@@ -1,21 +1,21 @@
 apiVersion: apps/v1   
 kind: Deployment    
 metadata:            
-  name: node1-deployment    
+  name: node-d
   labels:        
-    app: node1  
+    app: node  
 spec:            
-  replicas: 1
+  replicas: 2
   selector:       
     matchLabels: 
-      app: node1
+      app: node
   template:        
     metadata:    
       labels:    
-        app: node1
+        app: node
     spec:        
       containers:    
-      - name: node1
+      - name: node
         image: arboretc/node1:latest
         ports:
-          - containerPort: 80
+          - containerPort: 3000
