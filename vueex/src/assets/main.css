@@ -13,6 +13,10 @@
   padding: 40px;
 }
 
+.rotate {
+  writing-mode: vertical-lr;
+}
+
 .lnk {
   background: none;
   border: none;
@@ -27,6 +31,9 @@
 .lnk > *:hover {
   text-decoration: none;
 }
+
+
+
 h2 {
   white-space: nowrap;
 }
@@ -41,8 +48,17 @@ h1 {
 }
 
 :root {
-  --bg: rgb(53, 60, 126);
-  --fg: rgb(215, 233, 232);
+  /* --fg: #DAD0AE;
+  --bg: #5C2627; */
+
+  /* --fg: #034460;
+  --bg: #EAE1CB; */
+
+  /* --fg: #144D4D;
+  --bg: #F6E5C6; */
+
+  --bg: #B9D7D6;
+  --fg: #144D4D;
   color: var(--fg);
   background-color: var(--bg);
   font-family: "Roboto";
@@ -63,3 +79,7 @@ h1 {
 *::-webkit-scrollbar { 
   display: none;
 }
+
+/* .lnk:focus > * {
+  font-size:xx-large;
+} */
