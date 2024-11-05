@@ -57,8 +57,11 @@ h1 {
   /* --fg: #144D4D;
   --bg: #F6E5C6; */
 
-  --bg: #B9D7D6;
-  --fg: #144D4D;
+  /* --bg: #B9D7D6;
+  --fg: #144D4D; */
+
+  --bg: #F2F1D3;
+  --fg: #DD5D00;
   color: var(--fg);
   background-color: var(--bg);
   font-family: "Roboto";
