@@ -15,11 +15,6 @@ const siteb = ref(null)
 const resumeb = ref(null)
 const ghb = ref(null)
 
-function send_gh () {
-  send(gh,ghb)
-  window.location.href = 'https://github.com/PaperLightbulb'
-}
-
 function send (sel, selb) {
   home.value.style.display = "none"
   resume.value.style.display = "none"
@@ -48,6 +43,11 @@ function send_this_site () {
   send(thisSite,siteb)
 }
 
+function send_gh () {
+  send(gh,ghb)
+  window.location.href = 'https://github.com/PaperLightbulb'
+}
+
 onMounted(() => {
   send(home,homeb)
 })
@@ -63,10 +63,10 @@ onMounted(() => {
       <button class="lnk" @click="send_gh()" ><h2 ref="ghb">Github</h2></button>
       <button class="lnk" @click="send_resume()" ><h2  ref="resumeb">Resume</h2></button>
     </div>
-    <div ref="home">
+    <div class="content" ref="home">
       <p>I'm a computer science student with a passion for containerization. I built my own Kuberenetes cluster and host both pre made services and my own apps. My interest in Dev Ops has grown with my introduction to cloud computing and web backend. I have experience with Amazon Web Services such as EC2, Lambda, and S3. I am excited to provide a valuable perspective to the team.</p>
     </div>
-    <div ref="resume">
+    <div class="content" ref="resume">
       <h2>Education</h2><br>
 <h3>Projects</h3><p>
 Personal Kubernetes Cluster<br>
@@ -99,9 +99,9 @@ Scouts BSA (formerly Boy Scouts of America)<br>
 Safe City Food Shelf<br>
 - Helped hundreds of individuals and families have access to timely, dignified food options.</p>
     </div>
-    <div ref="thisSite" >
+    <div class="content" ref="thisSite" >
       <p>This site is hosted on my personal k3s Kubernetes cluster. Kubernetes facinates me beacuse of its continuous uptime features and ability to load balance across machines. My k3s cluster has 4 machines, ranging from a Raspberry Pie 2 to a beefy gaming PC. I created a build script in order to make updating this website easy and painless. I used a reverse tunnelling service to host this website on the public internet due to not having access to a public IP address or port forwarding. I built with Vue JS, which interested me because of its abstraction of the virtual DOM, and because of my past experience with it.</p>
     </div>
-    <div ref="gh"></div>
+    <div class="content" ref="gh"></div>
   </div>
 </template>
