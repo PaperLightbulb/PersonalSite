@@ -1,3 +1,11 @@
+body {
+	margin: 0;
+}
+
+#app {
+	height: 100vh;
+}
+
 .horiz {
   display: flex;
   flex-direction: row;
@@ -10,31 +18,37 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 40px;
+  padding: 25px;
 }
+
+.smallw {
+	max-width: 200px;
+}
+
 
 .rotate {
   writing-mode: vertical-lr;
 }
 
-.lnk {
+a {
   background: none;
   border: none;
   padding-inline: 15px;
   padding-left: 0;
-}
-.lnk > * {
   text-decoration: underline;
   color: var(--fg);
   font-family: "Roboto";
 }
-.lnk > *:hover {
+a:hover {
   text-decoration: none;
 }
 
 @media screen and (min-width: 500px) {
   .content {
     display: none;
+  }
+  .smallw {
+	  max-width: 400px;
   }
 }
 
@@ -48,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 45px;
 }
 
 :root {
@@ -79,14 +93,7 @@ h1 {
   font-weight: 900;
   font-style: normal;
 }
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-*::-webkit-scrollbar { 
-  display: none;
-}
 
-/* .lnk:focus > * {
-  font-size:xx-large;
-} */
+li {
+	list-style-type: none;
+}
