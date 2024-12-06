@@ -1,7 +1,4 @@
-# README
-
-## Site
-[iloike.xyz](https://iloike.xyz)
+# Personal Site
 
 ## Building
 - Run ```./build.sh``` from /vueex
